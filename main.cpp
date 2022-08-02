@@ -12,6 +12,8 @@ const unsigned int SCR_HEIGHT = 600;
 
 int main()
 {
+
+    std::cout << "That's  OK!" <<std::endl;
     // glfw: initialize and configure
     // ------------------------------
     glfwInit();
@@ -32,6 +34,7 @@ int main()
         glfwTerminate();
         return -1;
     }
+
     glfwMakeContextCurrent(window);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 
